@@ -1,0 +1,35 @@
+.mainPage {
+  background-color: white;
+}
+
+.podcasterSection {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: solid #bec3c6 2px;
+  padding: 20px 0 10px 20px;
+
+  .titlePodcaster {
+    color: #64889e;
+  }
+}
+
+.filterSection {
+  color: #64889e;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  .podcastCounter {
+    margin: 0px 5px 0px 5px;
+    min-width: 50px;
+    background-color: #64889e;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+    h3 {
+      margin: 0px;
+      color: white;
+    }
+  }
+}

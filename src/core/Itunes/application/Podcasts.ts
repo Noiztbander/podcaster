@@ -1,20 +1,25 @@
-import type { IPodcast } from "src/core/Itunes/domain/Podcasts";
-import { IPodcastsRepository } from "src/core/Itunes/infra/PodcastsRepository";
+import type { Ipodcast } from "src/core/Itunes/domain/Podcasts";
+import { IPodcastRestApisRepository } from "src/core/Itunes/infra/PodcastsRepository";
+import { transformRestApiPodcastsDataToViewModel } from "./transformers";
 
-export interface IPodcastsGetter {
-  get(): Promise<IPodcast[]>;
+export interface IPodcastRestApisGetter {
+  get(): Promise<Ipodcast[]>;
 }
 
-export class PodcastsGetter implements IPodcastsGetter {
-  constructor(private readonly repository: IPodcastsRepository) {}
+export class PodcastsGetter implements IPodcastRestApisGetter {
+  constructor(private readonly repository: IPodcastRestApisRepository) {}
 
-  private fetchPodcasts = async (): Promise<IPodcast[]> => {
+  private fetchPodcasts = async (): Promise<Ipodcast[]> => {
     const resp = await this.repository.get();
 
-    return resp.feed.entry;
+    const toModelView = transformRestApiPodcastsDataToViewModel(
+      resp.feed.entry
+    );
+
+    return toModelView;
   };
 
-  async get(): Promise<IPodcast[]> {
+  async get(): Promise<Ipodcast[]> {
     return this.fetchPodcasts();
   }
 }

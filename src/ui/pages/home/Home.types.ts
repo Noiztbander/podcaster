@@ -1,8 +1,8 @@
-import { IPodcast } from "@/core/Itunes/domain/Podcasts";
+import { Ipodcast } from "@/core/Itunes/domain/Podcasts";
 import { ReactNode } from "react";
 
 export interface IHomeContext {
-  podcasts: IPodcast[];
+  podcasts: Ipodcast[];
 }
 
 export interface HomeProviderProps extends IHomeContext {

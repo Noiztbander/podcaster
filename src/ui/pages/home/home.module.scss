@@ -1,5 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 .mainPage {
-  background-color: white;
+  p,
+  h1,
+  h1,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  margin-bottom: 100px;
 }
 
 .podcasterSection {
@@ -32,4 +42,13 @@
       color: white;
     }
   }
+}
+
+.podcastContainer {
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }

@@ -1,6 +1,13 @@
+import { Ipodcast } from "@/core/Itunes/domain/Podcasts";
+import { useContext } from "react";
+import PodcastCard from "./components/podcast-card/PodcastCard";
+import HomeContext from "./context/HomeContext";
 import styles from "./home.module.scss";
+import { IHomeContext } from "./Home.types";
 
 export default function Home() {
+  const { podcasts } = useContext(HomeContext) as IHomeContext;
+
   return (
     <main className={styles.mainPage}>
       <section className={styles.podcasterSection}>
@@ -20,7 +27,11 @@ export default function Home() {
           />
         </label>
       </section>
-      <section>Cards de los postcads</section>
+      <section className={styles.podcastContainer}>
+        {podcasts.map((podcast: Ipodcast, index) => (
+          <PodcastCard key={index} podcast={podcast} />
+        ))}
+      </section>
     </main>
   );
 }

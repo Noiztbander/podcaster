@@ -1,9 +1,6 @@
-import { ITUNES_BASE_URL } from "src/constants";
+import { ITUNES_BASE_URL } from 'src/constants';
 
-export const TopPodcastsRequest = async (
-  endpoint: string,
-  method = "GET"
-): Promise<any> => {
+export const ItunesAppleRequest = async (endpoint: string, method = 'GET'): Promise<any> => {
   const response = await fetch(`${ITUNES_BASE_URL}${endpoint}`, {
     method,
   });

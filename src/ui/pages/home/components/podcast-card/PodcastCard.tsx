@@ -22,7 +22,7 @@ export default function PodcastCard({ podcast }: { podcast: Ipodcast }) {
           <img src={image} alt={name} />
         </div>
         <div className={styles.titles}>
-          <h4>{name}</h4>
+          <h4>{name.toUpperCase()}</h4>
           <h5>{artist}</h5>
         </div>
       </Link>

@@ -1,5 +1,6 @@
 import { Ipodcast } from '@/core/Itunes/domain/Podcasts';
 import Header from '@/ui/components/header/Header';
+import useLocalStorage from '@/ui/hook/useLocalStorage';
 import { localStorageEnum } from '@/ui/types/localStorage.types';
 import { updateStorage } from '@/ui/utils/storage.utils';
 import { useContext, useEffect } from 'react';
@@ -16,6 +17,8 @@ export default function Home() {
     updateStorage({ [localStorageEnum.TOPPODCASTS]: podcasts });
   }, [podcasts]);
 
+  const { topPodcasts } = useLocalStorage();
+
   return (
     <main>
       <Header />
@@ -29,7 +32,7 @@ export default function Home() {
         </label>
       </section>
       <section className={styles.podcastSection}>
-        {podcasts.map((podcast: Ipodcast, index) => (
+        {topPodcasts.map((podcast: Ipodcast, index) => (
           <PodcastCard key={index} podcast={podcast} />
         ))}
       </section>

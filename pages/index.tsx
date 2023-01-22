@@ -1,7 +1,7 @@
-import { podcastsGetter } from "@/core/Itunes/services";
-import HomeProvider from "@/ui/pages/home/context/HomeProvider";
-import Home from "@/ui/pages/home/Home";
-import { IHomeContext } from "@/ui/pages/home/Home.types";
+import { podcastsGetter } from '@/core/Itunes/services';
+import HomeProvider from '@/ui/pages/home/context/HomeProvider';
+import Home from '@/ui/pages/home/Home';
+import { IHomeContext } from '@/ui/pages/home/Home.types';
 
 export default function HomePage(props: IHomeContext) {
   return (

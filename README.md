@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -13,6 +11,53 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Requirements
+
+[npm](https://www.npmjs.com/) 📦 v8.x or greater
+[node](https://www.nodejs.org/) 📦 v18.x or greater
+
+It's recommended to install npm and node through [nvm - node version manager](https://github.com/nvm-sh/nvm#readme)
+
+## 📌 Understanding the project folder structure
+
+```bash
+├── /pages                    # NextJS router for server
+├── /src                      # All business logic and ui components
+│   ├── /core                 # The CORE of hexagonal architecture for each domain and all the business logic
+│   │   └── Itunes            # Itunes Domain
+│   │   │   └── ...           # Hexagonal architecture
+│   │   │   └── application   # Use cases
+│   │   │   └── domain        # Domain definition
+│   │   │   └── infra         # All external connections, like API, GraphQL, etc
+│   │   │   │   └── mocks     # All external connections mocks
+│   │   │   └── services      # Instances of use cases
+│   │   └── types             # Reusable types
+│   │   └── utils             # Reusable functions/helpers
+│   └── /ui                   # UI components
+│      └── components         # Global custom components
+│      └── hooks              # Global custom hooks
+│      └── pages              # UI of pages
+│      └── sass               # Global sass
+│      └── types              # Global types
+│      └── utils              # Reusable functions/helpers for UIp
+```
+
+## The web page views
+
+The whole website was made to be in 1024px. It wasn't done to mobile platform.
+
+Home:
+
+![alt text](./public/images/readme-images/home.png)
+
+Podcast Detail:
+
+![alt text](./public/images/readme-images/podcast-detail.png)
+
+Episode Detail:
+
+![alt text](./public/images/readme-images/episode-detail.png)
 
 ## Learn More
 

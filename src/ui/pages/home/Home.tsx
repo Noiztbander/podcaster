@@ -1,9 +1,10 @@
 import { Ipodcast } from '@/core/Itunes/domain/Podcasts';
 import Header from '@/ui/components/header/Header';
-import useLocalStorage from '@/ui/hook/useLocalStorage';
+import useInputFilter from '@/ui/hook/useInputFilter';
 import { localStorageEnum } from '@/ui/types/localStorage.types';
 import { updateStorage } from '@/ui/utils/storage.utils';
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import InputFilter from './components/podcast-card/input-filter/InputFilter';
 import PodcastCard from './components/podcast-card/PodcastCard';
 
 import HomeContext from './context/HomeContext';
@@ -12,27 +13,20 @@ import { IHomeContext } from './Home.types';
 
 export default function Home() {
   const { podcasts } = useContext(HomeContext) as IHomeContext;
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     updateStorage({ [localStorageEnum.TOPPODCASTS]: podcasts });
   }, [podcasts]);
 
-  const { topPodcasts } = useLocalStorage();
+  const { filteredPodcasts } = useInputFilter({ query });
 
   return (
     <main>
       <Header />
-      <section className={styles.filterSection}>
-        <div className={styles.podcastCounter}>
-          <h3>100</h3>
-        </div>
-
-        <label htmlFor="filter-podcasts">
-          <input type="text" id="filter-podcasts" name="filter-podcasts" placeholder="Filter podcasts..." />
-        </label>
-      </section>
+      <InputFilter setQuery={setQuery} podcastQuantity={filteredPodcasts.length} />
       <section className={styles.podcastSection}>
-        {topPodcasts.map((podcast: Ipodcast, index) => (
+        {filteredPodcasts.map((podcast: Ipodcast, index) => (
           <PodcastCard key={index} podcast={podcast} />
         ))}
       </section>

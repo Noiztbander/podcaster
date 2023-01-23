@@ -9,27 +9,6 @@
   }
 }
 
-.filterSection {
-  color: #64889e;
-  padding: 20px;
-  display: flex;
-  justify-content: flex-end;
-
-  .podcastCounter {
-    margin: 0px 5px 0px 5px;
-    min-width: 50px;
-    background-color: #64889e;
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-
-    h3 {
-      margin: 0px;
-      color: white;
-    }
-  }
-}
-
 .podcastSection {
   display: grid;
   width: 100%;
@@ -37,4 +16,5 @@
   justify-items: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
+  padding-bottom: 30px;
 }

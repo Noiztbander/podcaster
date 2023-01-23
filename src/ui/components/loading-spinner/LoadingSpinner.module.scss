@@ -1,12 +1,11 @@
 .spinnerContainer {
-  display: inline-block;
   position: absolute;
   right: 0;
   top: -12px;
 }
 
 .loadingSpinner {
-  display: inline-block;
+  display: none;
   position: relative;
   width: 80px;
   height: 80px;

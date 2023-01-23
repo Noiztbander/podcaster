@@ -19,6 +19,8 @@ export interface IEpisode {
   releaseDate: string;
   trackName: string;
   episodeUrl: string;
+  trackId: number;
+  description: string;
 }
 
 export interface IPodcastDetailRestApi {

@@ -8,6 +8,7 @@ import { localStorageEnum } from '@/ui/types/localStorage.types';
 import useLocalStorage from '@/ui/hook/useLocalStorage';
 import EpisodeRowItem from './components/episode-row-item/EpisodeRowitem';
 import { IEpisode } from '@/core/Itunes/domain/Podcasts';
+import PodcastDetailItem from '../../components/podcast-detail-item/PodcastDetailItem';
 
 export default function PodcastDetails() {
   const { episodesList } = useContext(PodcastContext) as IPodcastContext;
@@ -16,31 +17,13 @@ export default function PodcastDetails() {
     updateStorage({ [localStorageEnum.EPISODES]: episodesList });
   }, [episodesList]);
 
-  const { podcast, episodes } = useLocalStorage();
+  const { episodes } = useLocalStorage();
 
   return (
     <main>
       <Header />
       <div className={styles.PageContainer}>
-        <section className={styles.podcastSection}>
-          <div className={styles.imagePodcast}>
-            <img src={podcast.image} alt={podcast.name} />
-          </div>
-
-          <div className={styles.titlePodcast}>
-            <strong>
-              <h4>{podcast.name}</h4>
-            </strong>
-            <h5>by {podcast.artist}</h5>
-          </div>
-
-          <div className={styles.summaryPodcast}>
-            <strong>
-              <h4>Description:</h4>
-            </strong>
-            <p>{podcast.summary}</p>
-          </div>
-        </section>
+        <PodcastDetailItem />
         <section className={styles.episodesListSection}>
           <div className={styles.titleList}>
             <h3>Episodes: {`${episodes.length}`}</h3>

@@ -8,6 +8,6 @@ export interface IPodcastDetailRepository {
 
 export class PodcastDetailRepository implements IPodcastDetailRepository {
   async get(podcastId = ''): Promise<Response<IPodcastDetailRestApi[]>> {
-    return ItunesAppleRequest(`/lookup?id=${podcastId}&media=podcast&entity=podcastEpisode&limit=40`);
+    return ItunesAppleRequest(`/lookup?id=${podcastId}&media=podcast&entity=podcastEpisode`);
   }
 }

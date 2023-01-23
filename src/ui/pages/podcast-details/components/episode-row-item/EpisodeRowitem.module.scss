@@ -5,8 +5,8 @@
   justify-items: flex-start;
   grid-template-columns: 1fr 90px 60px;
   gap: 10px;
-  border-bottom: solid rgb(235, 235, 235) 1px;
-  padding: 5px 0px 5px 5px;
+  border-bottom: solid rgb(235, 235, 235) 2px;
+  padding: 6px 0px 6px 5px;
   gap: 30px;
   font-size: 10pt;
 
@@ -15,6 +15,6 @@
     max-width: 350px;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: rgb(0, 128, 255);
+    color: rgb(0, 71, 143);
   }
 }

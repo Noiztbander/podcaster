@@ -5,6 +5,7 @@ export const initialStorage = {
   [localStorageEnum.TOPPODCASTS]: [],
   [localStorageEnum.SELECTED_PODCAST]: {},
   [localStorageEnum.EPISODES]: [],
+  [localStorageEnum.SELECTED_EPISODE]: {},
 };
 
 export const getStorage = () => {

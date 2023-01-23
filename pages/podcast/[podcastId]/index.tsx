@@ -11,9 +11,9 @@ export default function PodcastPage(props: IPodcastContext) {
   );
 }
 
-export async function getServerSideProps(context: { query: { id: string } }) {
-  const { id } = context.query;
-  const [episodesList] = await Promise.all([podcastDetailGetter.get(id)]);
+export async function getServerSideProps(context: { query: { podcastId: string } }) {
+  const { podcastId } = context.query;
+  const [episodesList] = await Promise.all([podcastDetailGetter.get(podcastId)]);
 
   return {
     props: {

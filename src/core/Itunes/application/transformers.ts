@@ -10,7 +10,7 @@ export const transformRestApiPodcastsDataToViewModel = (podcasts?: Array<IPodcas
 export const presenterPodcastsDataToViewModel = (podcast: IPodcastRestApi): Ipodcast => {
   const toPodcastModel: Ipodcast = {
     id: podcast.id.attributes['im:id'],
-    name: podcast['im:artist'].label,
+    name: podcast['im:name'].label,
     summary: podcast.summary.label,
     image: podcast['im:image'][2].label ?? '',
     artist: podcast['im:artist'].label,

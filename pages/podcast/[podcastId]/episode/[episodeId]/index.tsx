@@ -1,5 +1,13 @@
 import EpisodeDetails from '@/ui/pages/episode-details/EpisodeDetails';
+import Head from 'next/head';
 
 export default function EpisodePage() {
-  return <EpisodeDetails />;
+  return (
+    <>
+      <Head>
+        <title>Episode Detail</title>
+      </Head>
+      <EpisodeDetails />
+    </>
+  );
 }

@@ -12,6 +12,12 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+Executing test:
+
+```bash
+npm run test
+```
+
 ### Requirements
 
 [npm](https://www.npmjs.com/) 📦 v8.x or greater
@@ -58,6 +64,10 @@ Podcast Detail:
 Episode Detail:
 
 ![alt text](./public/images/readme-images/episode-detail.png)
+
+Testing in terminal example:
+
+![alt text](./public/images/readme-images/test.png)
 
 ## Learn More
 

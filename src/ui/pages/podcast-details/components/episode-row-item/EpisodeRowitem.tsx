@@ -9,7 +9,7 @@ import { formatDate, msToHMS } from './EpisodeRowitem.utils';
 
 const EpisodeRowItem = ({ episode }: { episode: IEpisode }) => {
   const router = useRouter();
-  const { podcastId } = router.query;
+  const { podcastId } = router?.query ?? { podcastId: '' };
 
   return (
     <li>

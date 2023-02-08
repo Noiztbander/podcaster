@@ -1,0 +1,469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<<EpisodeDetails /> /> should render the component correctly with default values 1`] = `
+<DocumentFragment>
+  <main>
+    <section
+      class="podcasterSection"
+    >
+      <a
+        href="/"
+      >
+        <h3
+          class="titlePodcaster"
+        >
+          Podcaster
+        </h3>
+      </a>
+      <div
+        class="spinnerContainer"
+      >
+        <div
+          class="loadingSpinner"
+          id="header-loading-spinner"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </section>
+    <div
+      class="PageContainer"
+    >
+      <section
+        class="podcastSection"
+      >
+        <a
+          class="imagePodcast"
+          href="/podcast/undefined"
+        >
+          <img />
+        </a>
+        <a
+          class="titlePodcast"
+          href="/podcast/undefined"
+        >
+          <strong>
+            <h4 />
+          </strong>
+          <h5>
+            by 
+          </h5>
+        </a>
+        <div
+          class="summaryPodcast"
+        >
+          <strong>
+            <h4>
+              Description:
+            </h4>
+          </strong>
+          <p />
+        </div>
+      </section>
+      <section
+        class="episodeSection"
+      >
+        <div
+          class="title"
+        />
+        <div>
+          <textarea
+            class="textArea"
+            readonly=""
+          />
+        </div>
+        <div
+          class="audio"
+        />
+      </section>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<Home /> should render the component correctly with default values 1`] = `
+<DocumentFragment>
+  <main>
+    <section
+      class="podcasterSection"
+    >
+      <a
+        href="/"
+      >
+        <h3
+          class="titlePodcaster"
+        >
+          Podcaster
+        </h3>
+      </a>
+      <div
+        class="spinnerContainer"
+      >
+        <div
+          class="loadingSpinner"
+          id="header-loading-spinner"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </section>
+    <section
+      class="filterSection"
+    >
+      <div
+        class="podcastCounter"
+      >
+        <h3>
+          0
+        </h3>
+      </div>
+      <label
+        class="label"
+        for="filter-podcasts"
+      >
+        <input
+          id="filter-podcasts"
+          name="filter-podcasts"
+          placeholder="Filter podcasts..."
+          type="text"
+        />
+      </label>
+    </section>
+    <section
+      class="podcastSection"
+    />
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<Home /> should render the component correctly with some value 1`] = `
+<DocumentFragment>
+  <main>
+    <section
+      class="podcasterSection"
+    >
+      <a
+        href="/"
+      >
+        <h3
+          class="titlePodcaster"
+        >
+          Podcaster
+        </h3>
+      </a>
+      <div
+        class="spinnerContainer"
+      >
+        <div
+          class="loadingSpinner"
+          id="header-loading-spinner"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </section>
+    <section
+      class="filterSection"
+    >
+      <div
+        class="podcastCounter"
+      >
+        <h3>
+          2
+        </h3>
+      </div>
+      <label
+        class="label"
+        for="filter-podcasts"
+      >
+        <input
+          id="filter-podcasts"
+          name="filter-podcasts"
+          placeholder="Filter podcasts..."
+          type="text"
+        />
+      </label>
+    </section>
+    <section
+      class="podcastSection"
+    >
+      <div
+        class="podcastCard"
+      >
+        <a
+          class="bg"
+          href="/podcast/1535809341"
+        >
+          <div
+            class="image"
+          >
+            <img
+              alt="The Joe Budden Podcast"
+              src="https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/170x170bb.png"
+            />
+          </div>
+          <div
+            class="titles"
+          >
+            <h4>
+              THE JOE BUDDEN PODCAST
+            </h4>
+            <h5>
+              The Joe Budden Network
+            </h5>
+          </div>
+        </a>
+      </div>
+      <div
+        class="podcastCard"
+      >
+        <a
+          class="bg"
+          href="/podcast/1481398762"
+        >
+          <div
+            class="image"
+          >
+            <img
+              alt="Dolly Parton's America"
+              src="https://is2-ssl.mzstatic.com/image/thumb/Podcasts115/v4/58/b8/16/58b8165d-d674-16cd-3822-36d8acad0151/mza_5834995761907664558.jpg/170x170bb.png"
+            />
+          </div>
+          <div
+            class="titles"
+          >
+            <h4>
+              DOLLY PARTON'S AMERICA
+            </h4>
+            <h5>
+              WNYC Studios & OSM Audio
+            </h5>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<PodcastDetails /> should render the component correctly with default values 1`] = `
+<DocumentFragment>
+  <main>
+    <section
+      class="podcasterSection"
+    >
+      <a
+        href="/"
+      >
+        <h3
+          class="titlePodcaster"
+        >
+          Podcaster
+        </h3>
+      </a>
+      <div
+        class="spinnerContainer"
+      >
+        <div
+          class="loadingSpinner"
+          id="header-loading-spinner"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </section>
+    <div
+      class="PageContainer"
+    >
+      <section
+        class="podcastSection"
+      >
+        <a
+          class="imagePodcast"
+          href="/podcast/undefined"
+        >
+          <img />
+        </a>
+        <a
+          class="titlePodcast"
+          href="/podcast/undefined"
+        >
+          <strong>
+            <h4 />
+          </strong>
+          <h5>
+            by 
+          </h5>
+        </a>
+        <div
+          class="summaryPodcast"
+        >
+          <strong>
+            <h4>
+              Description:
+            </h4>
+          </strong>
+          <p />
+        </div>
+      </section>
+      <section
+        class="episodesListSection"
+      >
+        <div
+          class="titleList"
+        >
+          <h3>
+            Episodes: 0
+          </h3>
+        </div>
+        <div
+          class="episodesList"
+        >
+          <div
+            class="titles"
+          >
+            <h5>
+              Title
+            </h5>
+            <h5>
+              Date
+            </h5>
+            <h5>
+              Duration
+            </h5>
+          </div>
+          <ul />
+        </div>
+      </section>
+    </div>
+  </main>
+</DocumentFragment>
+`;
+
+exports[`<PodcastDetails /> should render the component correctly with some value 1`] = `
+<DocumentFragment>
+  <main>
+    <section
+      class="podcasterSection"
+    >
+      <a
+        href="/"
+      >
+        <h3
+          class="titlePodcaster"
+        >
+          Podcaster
+        </h3>
+      </a>
+      <div
+        class="spinnerContainer"
+      >
+        <div
+          class="loadingSpinner"
+          id="header-loading-spinner"
+        >
+          <div />
+          <div />
+          <div />
+          <div />
+        </div>
+      </div>
+    </section>
+    <div
+      class="PageContainer"
+    >
+      <section
+        class="podcastSection"
+      >
+        <a
+          class="imagePodcast"
+          href="/podcast/undefined"
+        >
+          <img />
+        </a>
+        <a
+          class="titlePodcast"
+          href="/podcast/undefined"
+        >
+          <strong>
+            <h4 />
+          </strong>
+          <h5>
+            by 
+          </h5>
+        </a>
+        <div
+          class="summaryPodcast"
+        >
+          <strong>
+            <h4>
+              Description:
+            </h4>
+          </strong>
+          <p />
+        </div>
+      </section>
+      <section
+        class="episodesListSection"
+      >
+        <div
+          class="titleList"
+        >
+          <h3>
+            Episodes: 1
+          </h3>
+        </div>
+        <div
+          class="episodesList"
+        >
+          <div
+            class="titles"
+          >
+            <h5>
+              Title
+            </h5>
+            <h5>
+              Date
+            </h5>
+            <h5>
+              Duration
+            </h5>
+          </div>
+          <ul>
+            <li>
+              <a
+                class="liItem"
+                href="/podcast//episode/1000598416768"
+              >
+                <p
+                  class="title"
+                >
+                  Incredible Work
+                </p>
+                <p>
+                  07/02/2023
+                </p>
+                <p>
+                  42:04
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+</DocumentFragment>
+`;

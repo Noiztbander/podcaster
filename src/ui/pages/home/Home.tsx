@@ -12,7 +12,7 @@ import styles from './home.module.scss';
 import { IHomeContext } from './Home.types';
 
 export default function Home() {
-  const { podcasts } = useContext(HomeContext) as IHomeContext;
+  const { podcasts = [] } = useContext(HomeContext) as IHomeContext;
   const [query, setQuery] = useState('');
 
   useEffect(() => {

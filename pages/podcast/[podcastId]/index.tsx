@@ -3,6 +3,7 @@ import { podcastDetailGetter } from '@/core/Itunes/services/index';
 import PodcastProvider from '@/ui/pages/podcast-details/context/PodcastProvider';
 import { IPodcastContext } from '@/ui/pages/podcast-details/PodcastDetails.types';
 import Head from 'next/head';
+import React from 'react';
 
 export default function PodcastPage(props: IPodcastContext) {
   return (

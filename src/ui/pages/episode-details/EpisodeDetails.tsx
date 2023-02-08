@@ -19,9 +19,11 @@ export default function EpisodeDetails() {
             <textarea readOnly className={styles.textArea} defaultValue={episode.description} />
           </div>
           <div className={styles.audio}>
-            <audio controls autoPlay preload="auto">
-              <source src={episode.episodeUrl} type="audio/mpeg" />
-            </audio>
+            {episode.episodeUrl && (
+              <audio controls autoPlay preload="auto">
+                <source src={episode.episodeUrl} type="audio/mpeg" />
+              </audio>
+            )}
           </div>
         </section>
       </div>
